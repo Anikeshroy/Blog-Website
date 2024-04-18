@@ -1,0 +1,275 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* -------------Nav Bar----------- */
+
+header {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 6px rgba(10, 10, 10, 0.4);
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+header nav {
+    width: 1200px;
+    margin: 0 auto;
+    font-size: 25px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+header nav .nav_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.logo {
+    font-weight: bold;
+    text-shadow: 2px 4px 6px rgba(10, 10, 10, 0.4);
+}
+
+.logo p span {
+    color: red;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+header nav ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header nav ul a:hover {
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+}
+
+/* ----------------Top Section -------------- */
+.top {
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.top_container {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+.top_content {
+    padding: 10px;
+    font-family: sans-serif;
+    text-shadow: 2px 4px 6px rgba(10, 10, 10, 0.4);
+}
+
+.top_content h1 {
+    font-size: 90px;
+    /** TEXT GRADIENT */
+    color: #5cd81b;
+    background-image: -webkit-linear-gradient(180deg, #5cd81b 34%, #f71dd5 81%, #38d27c 99%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* text-fill-color: transparent; */
+    -webkit-text-fill-color: transparent;
+}
+
+.top_content p {
+    font-size: 30px;
+    margin-top: -50px;
+}
+
+.top_image img {
+    width: 650px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 6px rgba(10, 10, 10, 0.4);
+}
+
+/* --------------------New Post------------------- */
+
+.new_post {
+    width: 1200px;
+    margin: 0 auto;
+    /* margin-top: 50px; */
+
+}
+
+.np_container {
+    display: flex;
+    margin: 20px 10px;
+    align-items: center;
+    box-shadow: 2px 4px 6px rgba(10, 10, 10, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.np_image img {
+    width: 300px;
+    height: 210px;
+}
+
+
+.np_content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    font-family: sans-serif;
+}
+
+.np_content h2 {
+    font-size: 30px;
+}
+
+.np_content p {
+    font-size: 15px;
+}
+
+.np_status {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+}
+
+.read_btn {
+    all: unset;
+    font-weight: 600;
+    border-bottom: 1px solid transparent;
+}
+
+.read_btn:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* -----------Related Post---------- */
+.related_post {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+}
+
+.rp_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 0px;
+    align-items: center;
+    margin: 40px 10px;
+    border: 1px solid rgb(234, 227, 227);
+    box-shadow: 2px 4px 6px rgba(10, 10, 10, 0.4);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.rp_content {
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.rp_content h2 {
+    font-size: 30px;
+}
+
+.rp_content p {
+    font-size: 15px;
+}
+
+.rp_status {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.rp_image img {
+    width: 330px;
+    height: 210px;
+}
+
+/* --------------Main Post Card-------------- */
+.main_post_card {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.post_card {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 20px 10px;
+    box-shadow: 2px 4px 6px rgba(10, 10, 10, 0.4);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.post_content {
+    padding: 40px;
+    font-family: sans-serif;
+}
+
+.post_content h1 {
+    font-size: 60px;
+}
+
+.post_content p {
+    font-size: 20px;
+    word-spacing: 10px;
+}
+
+.post_status {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.post_card .post_image img {
+    /* width: 100%; */
+    height: 100%;
+}
+
+footer {
+    background-color: rgb(255, 255, 255);
+}
+
+.footer_main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.footer {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.footer ul a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer a i {
+    margin-right: 05px;
+}
